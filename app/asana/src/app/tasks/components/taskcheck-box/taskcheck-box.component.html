@@ -1,0 +1,5 @@
+<button class="material-symbols-outlined button-status"
+    [ngClass]="{'button-status__done' : status === 'done', 'button-status__loss' : status === 'loss'}"
+    (click)="changeStatus()">
+    {{ status === 'loss' ? 'close': 'done'}}
+</button>
