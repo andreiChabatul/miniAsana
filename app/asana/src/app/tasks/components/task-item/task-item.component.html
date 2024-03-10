@@ -1,9 +1,9 @@
-<table class="wrapper-table">
-    <td>{{index}}</td>
-    <td>Germany</td>
-    <td>{{task.title}}</td>
-    <td><app-task-date [id]="task.id" [deadline]="task.deadline" /></td>
-    <td>Maria Anders</td>
-    <td>{{task.status}}</td>
-    <td>Alfreds Futterkiste</td>
-</table>
+<div class="wrapper-table">
+    <div>{{index}}</div>
+    <app-taskcheck-box [id]="task.id" [status]="task.status" />
+    <div>{{task.title}}</div>
+    <app-task-date [id]="task.id" [deadline]="task.deadline" />
+    <div>Maria Anders</div>
+    <app-task-status [id]="task.id" [status]="task.status" />
+    <div>Alfreds Futterkiste</div>
+</div>

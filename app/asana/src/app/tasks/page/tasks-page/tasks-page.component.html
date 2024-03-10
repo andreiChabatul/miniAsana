@@ -1,1 +1,4 @@
-<app-task-item [index]="1" [task]="mocTask"></app-task-item>>
+@for (task of mocTask; track $index) {
+<app-task-item [index]="$index + 1" [task]="task"></app-task-item>
+
+}

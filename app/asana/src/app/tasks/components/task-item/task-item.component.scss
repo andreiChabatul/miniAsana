@@ -1,5 +1,6 @@
 .wrapper-table {
-    @apply w-full;
+    @apply w-full grid border-t-2 border-solid border-gray-200 py-2 px-4 items-center gap-4;
+    grid-template-columns: max-content max-content 1fr max-content repeat(3, 1fr);
 
     td {
         @apply border-solid border-red-500 border-2
