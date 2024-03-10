@@ -1,0 +1,7 @@
+.wrapper-table {
+    @apply w-full;
+
+    td {
+        @apply border-solid border-red-500 border-2
+    }
+}
