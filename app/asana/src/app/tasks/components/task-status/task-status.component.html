@@ -1,0 +1,7 @@
+<mat-form-field>
+  <mat-select [(value)]="status">
+    @for (item of statusAll; track $index) {
+    <mat-option [value]="item">{{item}}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>
