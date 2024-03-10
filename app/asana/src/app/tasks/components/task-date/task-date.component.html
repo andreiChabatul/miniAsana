@@ -1,8 +1,15 @@
-<div>
+<mat-form-field class="date-container">
+    <input matInput [matDatepicker]="picker" (dateChange)="onDate($event)" class="temp" >
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+<button backDate [date]="deadline" class="date-button" mat-raised-button (click)="picker.open()">
     @if (deadline) {
     <span>{{deadline | date:"MMM dd" }}</span>
     }
     @else {
-    <span>See you later</span>
+    <p class="no-date-container">
+        <span class="material-symbols-outlined"> event_repeat </span>
+        No date
+    </p>
     }
-</div>
+</button>

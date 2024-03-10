@@ -1,0 +1,25 @@
+.date-button {
+    @apply w-32 text-neutral-200;
+    color: white !important;
+    font-size: 12px !important;
+}
+
+.no-date-container {
+    @apply flex gap-2 items-center;
+}
+
+.date-container {
+ 
+
+    .mat-mdc-text-field-wrapper {
+        width: 0 !important;
+        position: absolute !important;
+        opacity: 0 !important;
+    }
+
+ 
+}
+
+.mat-typography p {
+    margin: 0;
+}
