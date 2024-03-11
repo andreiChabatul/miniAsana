@@ -1,0 +1,27 @@
+@import './../../../../style/default.scss';
+
+.mat-mdc-select-arrow-wrapper,
+.mat-mdc-form-field-subscript-wrapper,
+.mdc-line-ripple {
+    display: none !important;
+}
+
+.mat-mdc-form-field-flex,
+.mat-mdc-form-field-infix {
+    height: 45px !important;
+    padding: 0 !important;
+    padding-top: 3px !important
+}
+
+.mat-mdc-select-value {
+    @apply text-center;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: rgba($color: #000000, $alpha: 0) !important;
+}
+
+
+.mat-mdc-select-value-text {
+    @include colorTaskText;
+}

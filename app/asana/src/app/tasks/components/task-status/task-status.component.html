@@ -1,7 +1,7 @@
-<mat-form-field>
+<mat-form-field [status]="status" backStatus class="task-select-container">
   <mat-select [(value)]="status">
     @for (item of statusAll; track $index) {
-    <mat-option [value]="item">{{item}}</mat-option>
+    <mat-option [value]="item">{{item | titlecase }}</mat-option>
     }
   </mat-select>
 </mat-form-field>
