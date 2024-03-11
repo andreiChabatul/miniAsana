@@ -5,9 +5,15 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { TaskDateComponent } from './components/task-date/task-date.component';
 import { MaterialsModule } from '../materials/materials.module';
 import { BackDateDirective } from './directive/backgroundDate';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TaskcheckBoxComponent } from './components/taskcheck-box/taskcheck-box.component';
 import { TaskStatusComponent } from './components/task-status/task-status.component';
+import { BackStatusDirective } from './directive/backgroundStatus';
+import { TaskPriorityComponent } from './components/task-priority/task-priority.component';
+import { BackPriorityDirective } from './directive/backgroundPriority';
+import { TaskControlComponent } from './components/task-control/task-control.component';
+import { TaskAssigneeComponent } from './components/task-assignee/task-assignee.component';
+import { TaskTitleComponent } from './components/task-title/task-title.component';
 
 
 
@@ -18,12 +24,19 @@ import { TaskStatusComponent } from './components/task-status/task-status.compon
     TaskDateComponent,
     BackDateDirective,
     TaskcheckBoxComponent,
-    TaskStatusComponent
+    TaskStatusComponent,
+    BackStatusDirective,
+    TaskPriorityComponent,
+    BackPriorityDirective,
+    TaskControlComponent,
+    TaskAssigneeComponent,
+    TaskTitleComponent
   ],
   imports: [
     CommonModule,
     MaterialsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     TasksPageComponent

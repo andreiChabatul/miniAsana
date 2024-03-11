@@ -3,12 +3,13 @@ export interface ITask {
     title: string;
     desk?: string;
     deadline?: Date;
-    priority?: EPriority;
+    priority: EPriority;
     status: EStatus;
-    performers?: IProfile;
+    assignee?: IProfile[];
 }
 
 export enum EPriority {
+    none = 'none',
     low = 'low',
     medium = 'medium',
     high = 'high',

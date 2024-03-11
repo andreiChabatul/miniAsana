@@ -3,5 +3,24 @@
 @tailwind components;
 @tailwind utilities;
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import "./style/default.scss";
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.task-select-container {
+    border-radius: 4px !important;
+    @apply w-28 h-9;
+    @include colorTaskText;
+}
+
+.mdc-list-item__primary-text {
+    font-size: 12px !important;
+}
