@@ -1,0 +1,7 @@
+@import './../../../../style/default.scss';
+
+
+.text-label {
+    @include colorTaskText;
+}
+
