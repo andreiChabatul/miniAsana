@@ -1,9 +1,10 @@
 <div class="wrapper-table">
     <div>{{index}}</div>
     <app-taskcheck-box [id]="task.id" [status]="task.status" />
-    <div>{{task.title}}</div>
-    <app-task-date [id]="task.id" [deadline]="task.deadline" />
-    <div>Maria Anders</div>
+    <app-task-title [id]="task.id" [title]="task.title" />
+    <app-task-date class="flex" [id]="task.id" [deadline]="task.deadline" />
+    <app-task-assignee [id]="task.id" [assignee]="task.assignee" class="h-7" />
     <app-task-status [id]="task.id" [status]="task.status" />
-    <div>Alfreds Futterkiste</div>
+    <app-task-priority [id]="task.id" [priority]="task.priority" />
+    <app-task-control />
 </div>
