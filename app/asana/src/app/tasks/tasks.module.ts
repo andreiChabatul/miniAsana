@@ -14,6 +14,8 @@ import { BackPriorityDirective } from './directive/backgroundPriority';
 import { TaskControlComponent } from './components/task-control/task-control.component';
 import { TaskAssigneeComponent } from './components/task-assignee/task-assignee.component';
 import { TaskTitleComponent } from './components/task-title/task-title.component';
+import { TaskWrapperComponent } from './components/task-wrapper/task-wrapper.component';
+import { TaskPanelItemComponent } from './components/task-panel-item/task-panel-item.component';
 
 
 
@@ -30,7 +32,9 @@ import { TaskTitleComponent } from './components/task-title/task-title.component
     BackPriorityDirective,
     TaskControlComponent,
     TaskAssigneeComponent,
-    TaskTitleComponent
+    TaskTitleComponent,
+    TaskWrapperComponent,
+    TaskPanelItemComponent
   ],
   imports: [
     CommonModule,
