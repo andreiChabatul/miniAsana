@@ -1,0 +1,12 @@
+<mat-accordion>
+    <mat-expansion-panel [expanded]="panelOpenState" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{title}}
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        @for (task of tasks; track $index) {
+        <app-task-item [task]="task" [index]="$index + 1" />
+        }
+    </mat-expansion-panel>
+</mat-accordion>
