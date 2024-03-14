@@ -1,0 +1,6 @@
+<button mat-button [matMenuTriggerFor]="menu">Order by: {{order$ | async}}</button>
+<mat-menu #menu="matMenu">
+    @for (order of orderTask; track $index) {
+    <button mat-menu-item (click)="setOrder(order)">{{order}}</button>
+    }
+</mat-menu>
