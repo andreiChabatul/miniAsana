@@ -1,0 +1,15 @@
+.assignee-container {
+    @apply w-full relative bottom-1;
+}
+
+.triger-container {
+    @apply flex gap-2 overflow-x-auto;
+}
+
+.img-assignee {
+    @apply w-8 h-8 rounded-full;
+}
+
+.option-container {
+    @apply flex gap-2 items-center;
+}

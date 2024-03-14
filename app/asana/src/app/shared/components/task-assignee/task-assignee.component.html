@@ -1,0 +1,20 @@
+<mat-form-field class="assignee-container">
+    @if (!assigneeForm.value?.length) {
+    <p class="text-gray-400">No assignee...</p>
+    }
+    <mat-select [formControl]="assigneeForm" multiple>
+        <mat-select-trigger class="triger-container">
+            @for (item of assigneeForm.value; track item) {
+            <img class="img-assignee" [src]="USERS[item].image" alt="assignee image">
+            }
+        </mat-select-trigger>
+        @for (assignee of assigneeList; track assignee) {
+        <mat-option [value]="assignee">
+            <div class="option-container">
+                <img class="img-assignee" [src]="USERS[assignee].image" alt="assignee image">
+                <span>{{USERS[assignee].name}}</span>
+            </div>
+        </mat-option>
+        }
+    </mat-select>
+</mat-form-field>
