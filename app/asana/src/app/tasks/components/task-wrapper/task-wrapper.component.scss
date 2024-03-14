@@ -1,3 +1,15 @@
 .tasks-wrapper {
-    @apply max-w-screen-2xl mx-auto w-11/12;
+    @apply max-w-screen-2xl w-full mx-auto overflow-x-auto;
+
+
 }
+
+.no-found-container {
+    @apply mt-20;
+}
+
+.tasks-main {
+    @apply overflow-y-auto;
+    height: 80vh;
+}
+

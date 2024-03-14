@@ -1,5 +1,13 @@
 <div class="tasks-wrapper">
-    @for (item of sortTask; track $index) {
-    <app-task-panel-item [title]="item.title" [tasks]="item.tasks" />
-    }
+    <app-tasks-hat />
+    <div class="tasks-main">
+        @if (isAddNewTask$ |async) {<app-task-new [newButton]="true" />}
+        @if (this.sortTask.length) {
+        @for (item of sortTask; track item) {
+        <app-task-panel-item [title]="item.title" [tasks]="item.tasks" />
+        }
+        }@else {
+        <p class="text-no-found">No found tasks</p>
+        }
+    </div>
 </div>
