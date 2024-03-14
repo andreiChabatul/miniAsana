@@ -1,0 +1,10 @@
+<div class="container-task">
+    @if (task$ | async; as task) {
+    <app-task-item [task]="task" />
+    } @else {
+    <div class="flex justify-start gap-4">
+        <a href="/" class="material-symbols-outlined href-home">arrow_back</a>
+        <p class="text-no-found">No found task</p>
+    </div>
+    }
+</div>

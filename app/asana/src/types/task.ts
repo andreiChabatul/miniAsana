@@ -5,7 +5,8 @@ export interface ITask {
     deadline?: Date;
     priority: EPriority;
     status: EStatus;
-    assignee?: IProfile[];
+    description?: string;
+    assignee?: string[];
 }
 
 export enum EPriority {
@@ -27,4 +28,11 @@ export enum EStatus {
 export interface IProfile {
     name: string;
     image?: string;
+    id: string
 }
+
+export type taskSortItem = {
+    title: string,
+    tasks: ITask[],
+    sort: number;
+  }

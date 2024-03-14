@@ -1,0 +1,30 @@
+<div class="task-item-container">
+    <div class="task-item-header">
+        <a href="/" class="material-symbols-outlined href-home">arrow_back</a>
+        <h3 class="title-item-task">More info task</h3>
+        <app-task-delete [id]="task.id" />
+    </div>
+    <div class="task-desc-container">
+        <p class="title-desc">Title task</p>
+        <app-task-title [title]="task.title" [id]="task.id" />
+    </div>
+    <div class="task-desc-container">
+        <p class="title-desc">Deadline task</p>
+        <app-task-date [id]="task.id" [deadline]="task.deadline" />
+    </div>
+    <div class="task-desc-container">
+        <p class="title-desc">Assignee task</p>
+        <app-task-assignee [id]="task.id" [assignee]="task.assignee" />
+    </div>
+    <div class="task-desc-container">
+        <p class="title-desc">Status task</p>
+        <app-task-status [id]="task.id" [status]="task.status" />
+    </div>
+    <div class="task-desc-container">
+        <p class="title-desc">Priority task</p>
+        <app-task-priority [id]="task.id" [priority]="task.priority" />
+    </div>
+
+    <app-task-description [id]="task.id" [description]="task.description" />
+
+</div>

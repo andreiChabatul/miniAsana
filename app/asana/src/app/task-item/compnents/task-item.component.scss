@@ -1,0 +1,21 @@
+.task-item-container {
+    @apply flex flex-col gap-3
+}
+
+.task-item-header {
+    @apply flex items-center justify-between
+}
+
+.task-desc-container {
+    @apply flex items-center justify-between
+}
+
+.title-item-task {
+    @apply text-xl font-extrabold p-0 m-0
+}
+
+
+
+.title-desc {
+    @apply font-medium text-base;
+}
