@@ -1,0 +1,1 @@
+export const resetHours = (date: Date) => new Date(date).setHours(0, 0, 0, 0);
