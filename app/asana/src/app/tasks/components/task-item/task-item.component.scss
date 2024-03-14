@@ -1,6 +1,11 @@
+@import "./../../../../style/default.scss";
+
 .wrapper-table {
-    @apply w-full grid border-t-2 border-solid border-gray-200 py-2 items-center gap-4;
-    grid-template-columns: max-content max-content 1fr max-content 20% repeat(4, max-content);
+    @apply w-full border-t-2 border-solid border-gray-200 py-2 items-center;
+    @include tableMarking;
+    padding-left: 1%;
+    padding-right: 1%;
+
 
     td {
         @apply border-solid border-red-500 border-2
