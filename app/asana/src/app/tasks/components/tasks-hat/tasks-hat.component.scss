@@ -1,0 +1,23 @@
+@import "./../../../../style/default.scss";
+
+
+.hat-tasks-container {
+    @apply h-10 w-full items-center justify-items-center rounded-lg;
+    @include tableMarking;
+    padding: 0 3%;
+    box-shadow:
+        inset 0 2px 9px rgba(255, 255, 255, 0.1),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: 700px) {
+        padding: 0 1%;
+    }
+}
+
+.text-hat {
+    @apply font-bold text-base;
+
+    @media screen and (max-width: 800px) {
+        @apply text-sm;
+    }
+}
