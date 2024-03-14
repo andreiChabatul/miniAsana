@@ -1,0 +1,5 @@
+<button [status]="status" appBackStatus class="material-symbols-outlined button-status"
+    [ngClass]="{'button-status__loss' : status === 'loss' || status === 'close'}"
+    (click)="changeStatus()">
+    {{viewStatus()}}
+</button>

@@ -1,0 +1,11 @@
+button {
+    @apply text-gray-400 duration-500;
+
+    &:hover {
+        @apply text-blue-600;
+    }
+
+    &:active {
+        @apply text-blue-800;
+    }
+}

@@ -1,9 +1,0 @@
-<mat-form-field [priority]="priority" backPriority class="task-select-container">
-    <mat-select [(value)]="priority">
-        @for (item of priorityAll; track $index) {
-        <mat-option [value]="item">{{item | titlecase}}
-        </mat-option>
-        }
-    </mat-select>
-
-</mat-form-field>

@@ -1,0 +1,9 @@
+<div class="task-desc-container">
+    <p class="title-desc">Description task</p>
+    <form>
+        <mat-form-field class="w-full h-full">
+            <input [formControl]="descForm" [value]="description" matInput #message
+                placeholder="Enter description task">
+        </mat-form-field>
+    </form>
+</div>
