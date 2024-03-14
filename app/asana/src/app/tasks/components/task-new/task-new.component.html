@@ -1,0 +1,6 @@
+<form class="new-task-form">
+    <mat-form-field class="new-task-container">
+        <input [formControl]="newTask" matInput #inputNew (blur)="lostfocus()"
+            placeholder="Please enter name new task...">
+    </mat-form-field>
+</form>
