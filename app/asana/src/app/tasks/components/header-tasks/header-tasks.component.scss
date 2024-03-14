@@ -1,0 +1,16 @@
+.header-wrapper {
+    @apply h-20 w-full border-b-2 border-solid border-gray-300 flex items-center justify-between px-5;
+
+}
+
+.container-sort {
+    @apply flex flex-col;
+}
+
+.header-search-sort {
+    @apply flex items-end gap-2;
+}
+
+.buttons-container {
+    @apply flex gap-2;
+}
