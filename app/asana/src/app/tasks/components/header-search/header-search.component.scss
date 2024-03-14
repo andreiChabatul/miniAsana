@@ -1,0 +1,11 @@
+.search-container {
+    @apply relative
+}
+
+.button-clear {
+    @apply absolute left-44 text-lg text-gray-400 duration-300;
+
+    &:hover {
+        @apply text-blue-600;
+    }
+}
