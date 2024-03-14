@@ -8,7 +8,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTreeModule } from '@angular/material/tree';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 
@@ -25,7 +26,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatSelectModule,
     MatIconModule,
     MatTreeModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatMenuModule
   ],
   exports: [
     MatCalendar,
@@ -37,7 +39,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatSelectModule,
     MatIconModule,
     MatTreeModule,
-    MatExpansionModule
+    MatExpansionModule, MatMenuModule
   ]
 })
 export class MaterialsModule { }
