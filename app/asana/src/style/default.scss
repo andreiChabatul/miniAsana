@@ -3,3 +3,18 @@
     font-size: 12px !important;
     white-space: nowrap;
 }
+
+@mixin tableMarking {
+    display: grid;
+    grid-template-columns: repeat(2, 1%) 1fr 10% 20% repeat(2, 10%) 5%;
+    gap: 1rem;
+
+    @media screen and (max-width: 1000px) {
+        gap: 1%;
+    }
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: repeat(2, 1%) 1fr 12% 15% repeat(2, 12%) 5%;
+    }
+}
+

@@ -13,14 +13,47 @@ body {
 body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+    overflow: hidden;
 }
 
 .task-select-container {
     border-radius: 4px !important;
-    @apply w-28 h-9;
+    @apply w-full h-9;
     @include colorTaskText;
 }
 
 .mdc-list-item__primary-text {
     font-size: 12px !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px #777579;
+}
+
+
+.mat-expansion-panel-body {
+    padding: 0 !important;
+}
+
+.mat-expansion-panel-header {
+    padding: 0 1% !important;
+}
+
+
+.href-home {
+    @apply text-gray-400 duration-300;
+
+    &:hover {
+        @apply text-blue-700;
+    }
+}
+
+.text-no-found {
+    @apply text-lg m-4 font-bold;
 }
