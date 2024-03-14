@@ -1,0 +1,6 @@
+<button mat-button [matMenuTriggerFor]="menu">Group by: {{field$ | async}}</button>
+<mat-menu #menu="matMenu">
+    @for (field of fieldTaskSort; track $index) {
+    <button mat-menu-item (click)="setField(field)">{{field}}</button>
+    }
+</mat-menu>
